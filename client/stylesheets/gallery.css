@@ -41,7 +41,7 @@ body {
 button {
   font: bold 24px Arial;
   background-color: black;
-  color: lime;
+  color: pink;
   padding: 2px 6px 2px 6px;
   border-radius: 10px;
   border: 1px solid #cccccc;
@@ -55,5 +55,5 @@ button {
 }
 input[type="text"] {
   font-size: 18px;
-  background-color: lime;
+  background-color: pink;
 }

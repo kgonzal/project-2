@@ -5,7 +5,6 @@ let controller = function() {
     "https://api.flickr.com/services/feeds/photos_public.gne?tags=";
   let suffixURL = "&format=json&jsoncallback=?";
   //get value entered by user from textbox
-  //let flickrTag= document.querySelector("input[type=text]").value;
   let flickrTag = $("input").val();
   let requestURL = prefixURL + flickrTag + suffixURL;
 
