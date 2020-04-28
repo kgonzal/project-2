@@ -14,3 +14,45 @@ let containsDuplicates = s => {
   }
   return false;
 };
+
+//3a
+
+revWords1 = sentence => {
+  var words = sentence.split(" ");
+  var temp;
+  for (var i = 0; i < words.length; i++) {
+    temp = "";
+    for (var j = words[i].length - 1; j >= 0; j--) {
+      temp += words[i][j];
+    }
+    words[i] = temp;
+  }
+  return words.join(" ");
+};
+console.log(revWords1("Web App Dev"));
+console.log(revWords1("Delta Echo"));
+
+//3b
+revWords2 = Sentence => {
+  var words = Sentence.split(" ");
+  var temp;
+  Sentence.forEach(function(c) {
+    temp += c + temp;
+  });
+  return words.join(" ");
+};
+
+console.log(revWords2("Web App Dev"));
+console.log(revWords2("Delta Echo"));
+
+//3c
+revWords3 = sentence => {
+  var words = sentence.split(" ");
+  var temp = "";
+  for (temp of words) {
+    temp += words;
+  }
+  return words.join(" ");
+};
+console.log(revWords3("Web App Dev"));
+console.log(revWords3("Delta Echo"));
